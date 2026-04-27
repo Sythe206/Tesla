@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.background-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  background-color: purple;
+}
+main {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+header {
+  max-width: 1920px;
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.teslaLogoContainer {
+  width: 220px;
+}
+.teslaLogo {
+  width: 151.82px;
+  height: 28.33px;
+}
+.headerTextContainer {
+  width: 420px;
+}
+.headerIconsContainer {
+  width: 220px;
+  gap: 4px;
+}
+.headerText {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+.headerIcon {
+  opacity: 0;
+}
