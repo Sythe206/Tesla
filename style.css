@@ -61,10 +61,8 @@ header {
   font-weight: 400;
   line-height: 56px;
   color: black;
-  display: inline-block;
   cursor: pointer;
-  position: relative;
-  z-index: 10;
+  display: inline-block;
 }
 .headerIcon {
   opacity: 0;
@@ -126,6 +124,118 @@ header {
   display: block;
 }
 .hoverContainer:hover {
+  display: block;
+}
+.energyHoverContainer {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  z-index: 1;
+  display: none;
+}
+.energyHover {
+  cursor: pointer;
+  line-height: 56px;
+  display: inline-block;
+}
+.energyEveryContainer {
+  height: 300px;
+  width: 928px;
+  margin-left: 350px;
+  gap: 16px;
+  position: relative;
+}
+.solarPanelHover {
+  height: 124px;
+  width: 220px;
+}
+.solar {
+  position: absolute;
+  left: 60px;
+  top: 225px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.energyUnderline {
+  position: absolute;
+  left: 70px;
+  top: 250px;
+  cursor: pointer;
+}
+.solarRoofHover {
+  height: 124px;
+  width: 220px;
+}
+.solarRoof {
+  position: absolute;
+  left: 300px;
+  top: 225px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.energyUnderline1 {
+  position: absolute;
+  left: 302px;
+  top: 250px;
+  cursor: pointer;
+}
+.powerWallHover {
+  height: 124px;
+  width: 220px;
+}
+.powerwall {
+  position: absolute;
+  left: 540px;
+  top: 225px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.energyUnderline2 {
+  position: absolute;
+  left: 544px;
+  top: 250px;
+  cursor: pointer;
+}
+.megaPackHover {
+  width: 220px;
+  height: 124px;
+}
+.megapack {
+  position: absolute;
+  left: 780px;
+  top: 225px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.energyUnderline3 {
+  position: absolute;
+  left: 783px;
+  top: 250px;
+  cursor: pointer;
+}
+.energyTextContainer {
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #171a20;
+  cursor: pointer;
+  position: absolute;
+  top: 80px;
+  left: 1450px;
+}
+.energyHover:hover + .energyHoverContainer {
+  display: block;
+}
+.energyHoverContainer:hover {
   display: block;
 }
 .video1 {
