@@ -32,17 +32,17 @@ header {
   width: 100%;
   height: 56px;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 .teslaLogoContainer {
   width: 220px;
 }
 .teslaLogo {
   width: 151.82px;
-  height: 28.33px;
+  height: 12.33px;
 }
 .headerTextContainer {
-  width: 420px;
+  width: 460px;
 }
 .headerIconsContainer {
   width: 220px;
@@ -53,10 +53,80 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: white;
+  color: black;
+}
+.headerTextHover {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 56px;
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 .headerIcon {
   opacity: 0;
+}
+.hoverContainer {
+  width: 100%;
+  height: 487px;
+  background-color: white;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  z-index: 1;
+  display: none;
+}
+.everyContainer {
+  width: 1800px;
+  height: 359px;
+  margin-left: 60px;
+  margin-top: 64px;
+  gap: 150px;
+}
+.vehiclesTextContainer {
+  width: 300px;
+  height: 358px;
+  flex-direction: column;
+  gap: 12px;
+}
+.carsContainer {
+  width: 1050px;
+  height: 358px;
+  margin-left: 150px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.carModels {
+  width: 250.5px;
+  height: 171.75px;
+  flex-direction: column;
+}
+.carImg {
+  width: 220px;
+  height: 123.75px;
+  margin-left: 15.25px;
+}
+.carName {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 93.25px;
+  font-family: "Montserrat", sans-serif;
+}
+.vehicelsText {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #171a20;
+  cursor: pointer;
+}
+.headerTextHover:hover + .hoverContainer {
+  display: block;
+}
+.hoverContainer:hover {
+  display: block;
 }
 .video1 {
   position: absolute;
@@ -190,4 +260,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   gap: 14px;
+}
+.headerTextHover:hover .hoverContainer {
+  display: block;
 }
